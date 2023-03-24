@@ -18,7 +18,7 @@ def FortinetSession():
     FortinetSession = "http://172.16.14.97/nagios/cgi-bin/extinfo.cgi?type=2&host=DC_Fortinet_27.5&service=FortinetCluster+Sesstions"
     r = requests.get(FortinetSession,auth=HTTPBasicAuth('vanhanh', 'vanhanh@2016'))
     session = re.findall(r'\d{5,9}',r.text)
-    text = "Báo cáo hệ thống:\n- Login: OK\n- CCU: %s \n- Fortinet session: %s\n- Kafka: %s \n- Rabbit: %s \n- Email: OK " %(getCCU(),session[0],AllKafka(),Rabbit())
+    text = "Báo cáo hệ thống:hehehehehehehehehehhe\n- Login: OK\n- CCU: %s \n- Fortinet session: %s\n- Kafka: %s \n- Rabbit: %s \n- Email: OK " %(getCCU(),session[0],AllKafka(),Rabbit())
     return text
 
 def crawData(url):
