@@ -17,3 +17,4 @@ build:
     - docker build --cache-from $CI_REGISTRY_IMAGE:latest --tag $CI_REGISTRY_IMAGE:v5 --tag $CI_REGISTRY_IMAGE:latest .
     - docker push $CI_REGISTRY_IMAGE:v5
     - docker push $CI_REGISTRY_IMAGE:latest
+    - echo "version: '3.7'\nservices:\n  myservice:\n    image: myimage:latest" > myconfig.yml
