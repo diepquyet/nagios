@@ -1,0 +1,11 @@
+pipeline {
+    agent any {
+        stages {
+            stage {
+                steps {
+                    get 'https://github.com/diepquyet/nagios.git'
+                }
+            }
+        }
+    }
+}
