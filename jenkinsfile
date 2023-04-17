@@ -1,11 +1,10 @@
 pipeline {
-    agent any {
-        stages {
-            stage {
+    agent any
+    stages {
+           stage ('Clone') {
                 steps {
                     get 'https://github.com/diepquyet/nagios.git'
                 }
             }
         }
-    }
 }
